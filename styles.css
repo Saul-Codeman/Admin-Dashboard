@@ -3,6 +3,8 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: lightgray;
+    font-family: 'Orbitron', sans-serif;
 }
 
 body {
@@ -26,30 +28,43 @@ body {
 .content {
     grid-column: 5 / 25;
     grid-row: 4 / 25;
-    background-color: red;
     display: grid;
+    background-color: goldenrod;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: repeat(24, 1fr);
+    gap: 16px;
 }
 
 .projects {
-    display: grid;
     grid-column: 1 / 18;
     grid-row: 1 / 25;
-    background-color: aqua;
+}
+
+.projects-content {
+    display: grid;
+    gap: 16px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
 }
 
 .announcements {
-    display: grid;
     grid-column: 18 / 25;
-    grid-row: 1 / 16;
-    background-color: lightgreen;
+    grid-row: 1 / 18;
+}
+
+.announcements-content {
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
 .trending {
-    display: grid;
     grid-column: 18 / 25;
-    grid-row: 16 / 25;
-    background-color: lightpink;
+    grid-row: 18 / 25;
 }
+
 
