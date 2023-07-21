@@ -6,37 +6,42 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 </head>
 <body>
     <div class="sidebar">
-        <div class="dashboard">Dashboard</div>
+        <div class="dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</div>
         <div class="user-features">
-            <div class="home sidebar-item">Home</div>
-            <div class="profile sidebar-item">Profile</div>
-            <div class="messages sidebar-item">Messages</div>
-            <div class="history sidebar-item">History</div>
-            <div class="tasks sidebar-item">Tasks</div>
-            <div class="communities sidebar-item">Communities</div>
+            <ul>
+                <li class="home sidebar-item"><a href="#"><i class="fas fa-home"></i></a> Home</li>
+                <li class="profile sidebar-item"><a href="#"><i class="fas fa-user"></i></a> Profile</li>
+                <li class="messages sidebar-item"><a href="#"><i class="fas fa-envelope"></i></a> Messages</li>
+                <li class="history sidebar-item"><a href="#"><i class="fas fa-history"></i></a> History</li>
+                <li class="tasks sidebar-item"><a href="#"><i class="fas fa-tasks"></i></a> Tasks</li>
+                <li class="communities sidebar-item"><a href="#"><i class="fas fa-users"></i></a> Communities</li>
+            </ul>
         </div>
         <div class="settings-info">
-            <div class="settings sidebar-item">Settings</div>
-            <div class="support sidebar-item">Support</div>
-            <div class="privacy sidebar-item">Privacy</div>
+            <ul>
+                <li class="settings sidebar-item"><a href="#"><i class="fas fa-cog"></i></a> Settings</li>
+                <li class="support sidebar-item"><a href="#"><i class="fas fa-life-ring"></i></a> Support</li>
+                <li class="privacy sidebar-item"><a href="#"><i class="fas fa-lock"></i></a> Privacy</li>
+            </ul>
         </div>
     </div>
     <div class="header">
         <div class="search">
-            <button>icon</button>
+            <i class="fas fa-search"></i>
             <input type="text">
         </div>
         <div class="right-header">
-            <button>icon</button>
-            <button>icon</button>
+            <i class="fas fa-bell"></i>
+            <a href="#"><i class="fas fa-user"></i></a>
             <div class="username">Morgan Oakley</div>
         </div>
         <div class="icon-greeting">
-            <button>icon</button>
+            <a href="#"><i class="fas fa-user"></i></a>
             <div class="greeting">
                 <p>Hi there,</p>
                 <h3>Morgan Oakley (@morgan)</h3>
